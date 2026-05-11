@@ -27,3 +27,10 @@ dots.forEach(d => d.addEventListener('click', () => goTo(+d.dataset.i)));
 
 // Auto-advance carousel every 6 seconds
 setInterval(() => goTo(current + 1), 6000);
+
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
