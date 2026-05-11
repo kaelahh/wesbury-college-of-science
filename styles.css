@@ -1166,11 +1166,10 @@ footer {
   .photo-grid.life-carousel .photo-cell.tall {
     grid-row: unset;
   }
-}
-@media (min-width: 768px) {
-  .burger-menu,
-  .hamburger,
-  .nav-toggle {
+
+  @media (min-width: 769px) {
+  .menu-toggle {
     display: none !important;
   }
 }
+
