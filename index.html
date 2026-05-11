@@ -12,20 +12,38 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav>
-    <div class="nav-inner">
-      <div class="nav-logo">
-        <img class="crest" src="assets/crest.png" alt="Wesbury Crest" />
-        <img class="name" src="assets/name.png" alt="Wesbury College of Science" />
-      </div>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#academics">Academics</a>
-        <a href="#admissions">Admissions</a>
-        <a href="#" class="btn-join">Log In</a>
+ <nav class="navbar">
+  <div class="nav-container">
+
+    <!-- Logo + School Name -->
+    <div class="nav-brand">
+      <img src="images/logo.png" alt="Wesbury Logo" class="logo">
+      <div class="school-name">
+        <h1>Wesbury College of Science</h1>
       </div>
     </div>
-  </nav>
+
+    <!-- Desktop Nav -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#campus">Campus</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Login Button -->
+    <a href="#" class="login-btn">Log In</a>
+
+    <!-- Burger Menu -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</nav>
 
   <!-- HERO SECTION -->
   <section class="hero">
