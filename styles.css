@@ -338,7 +338,34 @@ nav {
   filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.4));
   padding: 0 1rem;
 }
+/* =========================
+   HERO BANNER MOBILE
+========================= */
 
+@media (max-width: 768px) {
+
+  .hero-banner {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .hero-banner h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero-banner p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .hero-banner .banner-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
 /* ─────────────────────────────────────────────────────────────── */
 /* SHARED SECTION STYLES                                           */
 /* ─────────────────────────────────────────────────────────────── */
