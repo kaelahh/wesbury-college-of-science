@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wesbury College of Science</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img class="crest" src="assets/crest.png" alt="Wesbury Crest" />
+        <img class="name" src="assets/name.png" alt="Wesbury College of Science" />
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#academics">Academics</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#" class="btn-join">Log In</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Nurturing Tomorrow's<br>Scientists</h1>
+      <p class="hero-sub">Wesbury College of Science offers Grade 8–12 and Matric Upgrade programmes in a CAPS-aligned, English-medium environment — building confident, future-ready learners.</p>
+      <div class="hero-btns">
+        <a href="#admissions" class="btn-white">Begin your Application</a>
+        <a href="#contact" class="btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER (overlapping hero bottom) -->
+  <div class="banner-wrap">
+    <img src="assets\banner.png" alt="Soaring to Greater Heights" />
+  </div>
+
+  <!-- ABOUT / ACADEMICS SECTION -->
+  <section class="about" id="about">
+    <div class="about-inner">
+    
+      <div class="about-grid">
+        <div class="about-text">
+          
+          <p>Wesbury College of Science offers Grade 8–12 and Matric Upgrade programmes in a CAPS-aligned, English-medium environment — building confident, future-ready learners.</p>
+          <p>Since its establishment in 2007, Wesbury College of Science has consistently demonstrated academic excellence.</p>
+          <p>The school has achieved a <strong>100% Matric pass rate</strong> with distinctions and was ranked among the <strong>top 5 schools in the Ugu District</strong> in its founding year. It has also been recognised among the <strong>top 20 schools in KwaZulu-Natal</strong>. More recently, the school maintained its strong academic performance with a <strong>100% pass rate in the 2019 NSC examinations</strong> — reflecting its continued commitment to high educational standards.</p>
+        </div>
+        <div class="about-img">
+          <img src="assets/students.png" alt="Wesbury Students" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE / ADMISSIONS SECTION -->
+  <section class="why" id="admissions">
+    <div class="why-grid">
+      <div class="why-left">
+        <h2>Why Choose<br>Wesbury?</h2>
+        <ul class="checklist">
+          <li>
+            <div class="check-icon"></div>
+            <span>CAPS — English medium instruction</span>
+          </li>
+          <li>
+            <div class="check-icon"></div>
+            <span>Qualified &amp; accredited teachers</span>
+          </li>
+          <li>
+            <div class="check-icon"></div>
+            <span>Siblings discounted fees (2+ learners)</span>
+          </li>
+          <li>
+            <div class="check-icon"></div>
+            <span>MALUSI Accredited: 18 SCH01 00479</span>
+          </li>
+        </ul>
+        <a href="#" class="btn-enrol">Enroll Now</a>
+      </div>
+      <div class="why-right">
+        <img src="assets/why-image.jpg" alt="Why Choose Wesbury" />
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIES OF SUCCESS / TESTIMONIALS -->
+  <section class="testimonials">
+    <h2 class="section-title">Stories of Success</h2>
+    <div class="gold-bar"></div>
+    <p class="section-sub">Hear from the families and students whose lives have been shaped by a Wesbury education.</p>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="slide active">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">As a parent, I was looking for a school that challenges my son academically while keeping him grounded. Wesbury delivered on every front — rigorous, supportive, and inspiring.</p>
+          <div class="quote-author">
+            <div class="quote-line"></div>
+            <div>
+              <div class="quote-name">A. Akhona</div>
+              <div class="quote-role">Parent • Class of 2025</div>
+            </div>
+            <div class="quote-line"></div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">Wesbury College transformed my academic journey. The supportive environment and world-class faculty helped me achieve my dreams and prepare for my future.</p>
+          <div class="quote-author">
+            <div class="quote-line"></div>
+            <div>
+              <div class="quote-name">T. Ndlela</div>
+              <div class="quote-role">Alumnus • Class of 2022</div>
+            </div>
+            <div class="quote-line"></div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">The commitment of the Wesbury team to every learner is unmatched. My child has grown academically and personally in ways I never expected.</p>
+          <div class="quote-author">
+            <div class="quote-line"></div>
+            <div>
+              <div class="quote-name">L. Mthembu</div>
+              <div class="quote-role">Parent • Class of 2024</div>
+            </div>
+            <div class="quote-line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="prev">&#10094;</button>
+        <div class="dots">
+          <button class="dot active" data-i="0"></button>
+          <button class="dot" data-i="1"></button>
+          <button class="dot" data-i="2"></button>
+        </div>
+        <button class="carousel-btn" id="next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION / MISSION -->
+  <section class="vision-mission" id="academics">
+    <div class="vm-grid">
+      <div class="vm-card">
+        <div class="vm-header"><h3>Our Vision</h3></div>
+        <div class="vm-body">
+          <p>The school's vision is to provide quality science education for all learners admitted, and to fully develop the potential of each learner not only scientifically but also socially, spiritually, and economically in a democratic environment.</p>
+        </div>
+      </div>
+      <div class="vm-card">
+        <div class="vm-header"><h3>Our Mission</h3></div>
+        <div class="vm-body">
+          <p>The school's mission is to maintain a standard of achievement such that, in teaching and learning, it is judged to be one of the premier institutions in KwaZulu-Natal and the Republic of South Africa as a whole.</p>
+          <p>To achieve this, the school strives to admit learners from a cross-section of society, irrespective of their socio-economic background, ability, or previous attainments or failures, and who are able, with the support of its provision of thorough resources, to meet their goals.</p>
+          <p>The school does <strong>NOT DISCRIMINATE AGAINST ANY PERSON</strong> on the grounds of race, nationality, ethnic or national origin, religion, politics, or sex in implementing its Equal Opportunity Policy.</p>
+          <p>The school will incorporate the provisions in relation to age, disability, and sexual preferences within the law. The policy will be regularly reviewed, and arrangements made to monitor its application.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOVERNING BODY -->
+  <section class="governing">
+    <h2 class="section-title">GOVERNING BODY</h2>
+    <div class="gold-bar"></div>
+    <p class="section-sub">Meet our School Governing Body (SGB)! Dedicated parents, educators, and community members working together to guide our school's vision. Together, they ensure strong leadership, accountability, and continuous growth for our learners.</p>
+    <div class="members-grid">
+      <div class="member">
+        <div class="member-img"><img src="member-buthelezi.jpg" alt="Mr. Thami Buthelezi" /></div>
+        <div class="member-name">Mr. Thami Buthelezi</div>
+        <div class="member-title">Chairperson</div>
+      </div>
+      <div class="member">
+        <div class="member-img"><img src="member-dlamini.jpg" alt="Mrs. Nosipho Dlamini" /></div>
+        <div class="member-name">Mrs. Nosipho Dlamini</div>
+        <div class="member-title">Admin Secretary</div>
+      </div>
+      <div class="member">
+        <div class="member-img"><img src="member-mdunge.jpg" alt="Mr. S. G. Mdunge" /></div>
+        <div class="member-name">Mr. S. G. Mdunge</div>
+        <div class="member-title">Principal</div>
+      </div>
+      <div class="member">
+        <div class="member-img"><img src="member-thabede.jpg" alt="Mrs. M. Thabede" /></div>
+        <div class="member-name">Mrs. M. Thabede</div>
+        <div class="member-title">Treasurer</div>
+      </div>
+      <div class="member">
+        <div class="member-img"><img src="member-jwala.jpg" alt="Mr. Masombuka Jwala" /></div>
+        <div class="member-name">Mr. Masombuka Jwala</div>
+        <div class="member-title">Member</div>
+      </div>
+      <div class="member">
+        <div class="member-img"><img src="member-khoza.jpg" alt="Mr. S. V. Khoza" /></div>
+        <div class="member-name">Mr. S. V. Khoza</div>
+        <div class="member-title">Member</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIFE AT WESBURY -->
+  <section class="life">
+    <div class="life-header">
+      <div class="life-title-box"><h2>LIFE AT<br>WESBURY</h2></div>
+      <div class="photo-grid">
+        <div class="photo-cell tall"><img src="life1.jpg" alt="Life at Wesbury" /></div>
+        <div class="photo-col">
+          <div class="photo-cell"><img src="life2.jpg" alt="Life at Wesbury" /></div>
+          <div class="photo-cell"><img src="life3.jpg" alt="Life at Wesbury" /></div>
+        </div>
+        <div class="photo-col">
+          <div class="photo-cell"><img src="life4.jpg" alt="Life at Wesbury" /></div>
+          <div class="photo-cell"><img src="life5.jpg" alt="Life at Wesbury" /></div>
+        </div>
+        <div class="photo-col">
+          <div class="photo-cell"><img src="life6.jpg" alt="Life at Wesbury" /></div>
+          <div class="photo-cell wide"><img src="life7.jpg" alt="Life at Wesbury" /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <h2 class="contact-title">We'd Love to<br>Hear From You</h2>
+      <p class="contact-desc">Whether you're a prospective student, a parent, or a partner — our team is ready to assist you and guide you every step of the journey.</p>
+      <div class="contact-grid">
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-value">2nd Floor, Roodram HSE<br />47 N. Mandela Dr, Port Shepstone<br />KwaZulu-Natal, South Africa</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-value">084 760 9024<br />039 682 3160</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-value">concordf14@gmail.com</div>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe
+            title="Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3489.12!2d30.4536!3d-30.7385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6b3d3d3d3d3d3%3A0x0!2s47+Nelson+Mandela+Drive%2C+Port+Shepstone%2C+4240!5e0!3m2!1sen!2sza!4v1"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="assets/crest.png" alt="Wesbury Crest" />
+        <span>WESBURY<br><small>COLLEGE OF SCIENCE</small></span>
+      </div>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Programmes</h4>
+        <ul>
+          <li><a href="#">Grade 8</a></li>
+          <li><a href="#">Grade 9</a></li>
+          <li><a href="#">Grade 10</a></li>
+          <li><a href="#">Grade 11</a></li>
+          <li><a href="#">Grade 12</a></li>
+          <li><a href="#">Matric Upgrade</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">How to Apply</a></li>
+          <li><a href="#">Student Portal</a></li>
+          <li><a href="#">School Fees</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacts</h4>
+        <div class="footer-contact-item">
+          <div class="val">039 682 3160</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="val">084 760 9024</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="val">concordf14@gmail.com</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="val">2nd Floor, Roodram HSE<br />47 N. Mandela Dr, Port Shepstone<br />KwaZulu-Natal, South Africa</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Wesbury College of Science. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
