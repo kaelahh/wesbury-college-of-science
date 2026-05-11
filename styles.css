@@ -99,135 +99,6 @@ nav {
   background: #b08c1a;
 }
 
-/* =========================
-   NAVBAR
-========================= */
-
-.navbar {
-  width: 100%;
-  background: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 5%;
-}
-
-.nav-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo {
-  width: 55px;
-  height: 55px;
-  object-fit: contain;
-}
-
-.school-name h1 {
-  font-size: 18px;
-  line-height: 1.2;
-  color: #111;
-}
-
-.nav-links {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #111;
-  font-weight: 500;
-}
-
-.login-btn {
-  background: #0d6efd;
-  color: white;
-  padding: 10px 22px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.burger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.burger span {
-  width: 25px;
-  height: 3px;
-  background: #111;
-  border-radius: 10px;
-}
-
-/* =========================
-   MOBILE NAVBAR
-========================= */
-
-@media (max-width: 768px) {
-
-  .nav-container {
-    padding: 12px 20px;
-  }
-
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
-
-  .school-name h1 {
-    font-size: 13px;
-    max-width: 150px;
-  }
-
-  .login-btn {
-    padding: 8px 14px;
-    font-size: 12px;
-    margin-left: auto;
-    margin-right: 15px;
-  }
-
-  .burger {
-    display: flex;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: white;
-    flex-direction: column;
-    padding: 25px 0;
-    gap: 20px;
-    align-items: center;
-
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: 0.3s ease;
-  }
-
-  .nav-links.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-}
-
 /* ─────────────────────────────────────────────────────────────── */
 /* HERO SECTION                                                    */
 /* ─────────────────────────────────────────────────────────────── */
@@ -338,34 +209,7 @@ nav {
   filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.4));
   padding: 0 1rem;
 }
-/* =========================
-   HERO BANNER MOBILE
-========================= */
 
-@media (max-width: 768px) {
-
-  .hero-banner {
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    border-radius: 18px;
-  }
-
-  .hero-banner h3 {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .hero-banner p {
-    text-align: center;
-    font-size: 14px;
-  }
-
-  .hero-banner .banner-btn {
-    width: 100%;
-    text-align: center;
-  }
-}
 /* ─────────────────────────────────────────────────────────────── */
 /* SHARED SECTION STYLES                                           */
 /* ─────────────────────────────────────────────────────────────── */
@@ -1044,5 +888,282 @@ footer {
 
   .photo-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* DESKTOP */
+.menu-toggle {
+  display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 12px 20px;
+    position: relative;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+  }
+
+  .school-name {
+    width: 140px;
+    height: auto;
+  }
+
+  .login-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 220px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-bottom: 15px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #111;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero-banner {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-banner h3 {
+    font-size: 18px;
+  }
+
+  .hero-banner p {
+    font-size: 14px;
+  }
+}
+
+/* DESKTOP */
+.life-carousel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .life-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 14px;
+    padding-bottom: 10px;
+  }
+
+  .life-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .life-carousel img {
+    min-width: 85%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+  }
+}
+
+/* ========================================================= */
+/* NEW MOBILE NAVBAR */
+/* ========================================================= */
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+
+  .nav-inner {
+    height: 78px;
+    padding: 0 1rem;
+  }
+
+  .nav-logo {
+    gap: 0.45rem;
+    z-index: 1001;
+  }
+
+  .nav-logo .crest {
+    height: 54px;
+  }
+
+  .nav-logo .name {
+    height: 26px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #0d2766;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 78px;
+    right: -100%;
+    width: 270px;
+    height: calc(100vh - 78px);
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 1.5rem;
+    transition: 0.35s ease;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.08);
+  }
+
+  .nav-links.active {
+    right: 0;
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block !important;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  .btn-join {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem 1rem;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+  }
+}
+
+/* ========================================================= */
+/* MOBILE BANNER */
+/* ========================================================= */
+
+@media (max-width: 768px) {
+
+  .banner-wrap {
+    margin-top: 0;
+    margin-bottom: -70px;
+    z-index: 20;
+  }
+
+  .banner-wrap img {
+    max-width: 95%;
+    transform: scale(1.08);
+  }
+
+  .about {
+    padding-top: 7rem;
+  }
+}
+
+/* ========================================================= */
+/* LIFE AT WESBURY MOBILE CAROUSEL */
+/* ========================================================= */
+
+@media (max-width: 768px) {
+
+  .life-header {
+    gap: 2rem;
+  }
+
+  .photo-grid.life-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.5rem;
+  }
+
+  .photo-grid.life-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .photo-grid.life-carousel .photo-cell {
+    min-width: 85%;
+    height: 260px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .photo-grid.life-carousel .photo-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .photo-grid.life-carousel .photo-cell.tall {
+    grid-row: unset;
   }
 }
