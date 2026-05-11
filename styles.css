@@ -1167,3 +1167,10 @@ footer {
     grid-row: unset;
   }
 }
+@media (min-width: 768px) {
+  .burger-menu,
+  .hamburger,
+  .nav-toggle {
+    display: none !important;
+  }
+}
